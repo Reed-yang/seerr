@@ -19,4 +19,5 @@ if [ -f "$ENV_FILE" ]; then
 fi
 
 cd "$SCRIPT_DIR"
-exec pnpm start
+export NODE_ENV=production
+exec node dist/index.js
